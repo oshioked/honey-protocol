@@ -1,6 +1,6 @@
 .dao-and-labs-section{
     background-color: #5E4B36;
-    padding: 80px 0;
+    padding: 80px 0 40px;
     color: #FFE6CB;
     text-align: left;
 
@@ -44,18 +44,40 @@
             flex-direction: column;
             width: 100%;
 
-            button{
+            button, a{
+                display: block;
+                text-align: center;
+                text-decoration: none;
                 padding: 24px;
                 background-color: #F59A4E;
                 font-size: 18px;
                 color: white;
                 font-weight: 700;
-                font-family: "Euclid circular";
+                font-family: 'Ubuntu', sans-serif;
                 width: 100%;
+                border-radius: 20px;
 
                 &:first-child{
                     margin-bottom: 25px;
                 }
+            }
+        }
+    }
+
+    hr{
+        margin: 60px 0 40px;
+        border-color: #FFBE77;
+    }
+
+    .socials-container{
+        display: flex;
+        justify-content: center;
+
+        &>*{
+            margin-left: 40px;
+
+            &:first-child{
+                margin: 0;
             }
         }
     }
@@ -99,7 +121,7 @@
                 flex-direction: row;
                 justify-content: space-between;
 
-                button{
+                button, a{
                     width: 45%;
                     font-size: 14px;
 
@@ -110,6 +132,12 @@
             }
             .card{
                 order: -1;
+            }
+        }
+        .socials-container{
+    
+            &>*{
+                margin-left: 30px;
             }
         }
     }
